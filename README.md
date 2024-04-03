@@ -7,7 +7,7 @@
 
 3. alembic upgrade head
 
-4.uvicorn src.main:create_app --reload
+4. uvicorn src.main:create_app --reload
 
 
 Сервис будет доступен по адресу http://127.0.0.1:8000/docs#
