@@ -4,7 +4,7 @@ services:
     build: .
     container_name: 'api'
     command: >
-      sh -c "alembic upgrade head &&
+      sh -c "alembic revision --autogenerate -m "create_db" && alembic upgrade head &&
              uvicorn src.main:create_app --host 0.0.0.0"
     ports:
       - 8000:8000
